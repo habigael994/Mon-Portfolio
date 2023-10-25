@@ -7,13 +7,13 @@ import HelloWorld from './components/HelloWorld.vue'
   <header>
     <a class="logodisplay" href="#default" ><img class="logo" src=".//assets/726056.png" alt="pettergrifinvshomer"></a>
     <div class="header-right">
-      <a class="active" href="#home">Home</a>
-      
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+      <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
     </div>
   </header>
+  
    <section>
+    <RouterView />
      <h1>Je m'appelle Quentin Boyer et j'ai 19 ans.
      Je suis actuellement en formation pour devenir développeur web. Passionné par la création et l'innovation, 
      je me consacre à acquérir les compétences nécessaires pour concevoir et développer des sites web, 
@@ -22,6 +22,8 @@ import HelloWorld from './components/HelloWorld.vue'
      Mon objectif est de contribuer à l'évolution du monde numérique en créant des solutions web efficaces et esthétiques,
      tout en restant à l'affût des dernières tendances et technologies du domaine.
      </h1>
+
+      
    </section>
 </template>
 
@@ -47,7 +49,12 @@ html, body {
   
 section {
 
-     
+text-align: center;
+padding-bottom:50%;
+padding-top: 15%;
+width:70%;
+margin: auto;
+
 
 
 
@@ -57,13 +64,14 @@ section {
 
 }
  
-h1{
-    font-size:150%;
-    text-align: center;
-    padding-bottom:50%;
-    padding-top: 15%;
-    width:70%;
-    margin: auto;
+h1 {
+  
+  
+  
+  font-size:150%;
+   
+   
+   
       
   }
   
@@ -98,7 +106,7 @@ header a {
   text-decoration: none;
   font-size:100% ;
   line-height: 150%;
-  border-radius: 4px ;
+  border-radius: 10% ;
   width: 14%;
   height: 45%;
   background-color: gray;
@@ -113,7 +121,7 @@ header .logodisplay {
   text-decoration: none;
   font-size: 18px;
   line-height: 90%;
-  border-radius: 10px;
+  border-radius: 50%;
   width: 4%;
   height: 100%;
   background-color: white
@@ -124,6 +132,7 @@ header .logodisplay {
   width:100%;
   height:100%; 
   object-fit: fill;
+  border-radius: 50%;
 }
 
 /* Change the background color on mouse-over */
