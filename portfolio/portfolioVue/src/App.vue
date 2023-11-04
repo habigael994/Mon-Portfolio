@@ -1,33 +1,55 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+
+ 
+
+ 
 </script>
 
 <template>
   <header>
+    
     <a class="logodisplay" href="#default" ><img class="logo" src=".//assets/726056.png" alt="pettergrifinvshomer"></a>
     <div class="header-right">
       <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/Projects">Mes Projets</RouterLink>
     </div>
   </header>
   
    <section>
-    <RouterView />
+    
      <h1>Je m'appelle Quentin Boyer et j'ai 19 ans.
-     Je suis actuellement en formation pour devenir développeur web. Passionné par la création et l'innovation, 
+     Je suis actuellement une formation pour devenir développeur web. Passionné par la création et l'innovation, 
      je me consacre à acquérir les compétences nécessaires pour concevoir et développer des sites web, 
      des applications et des expériences en ligne interactives. Mon parcours de formation me permet d'explorer les langages de programmation,
      les technologies front-end et back-end, ainsi que les bonnes pratiques de développement.
      Mon objectif est de contribuer à l'évolution du monde numérique en créant des solutions web efficaces et esthétiques,
-     tout en restant à l'affût des dernières tendances et technologies du domaine.
+     tout en restant à l'affût des dernières tendances et technologies du domaine. 
      </h1>
-
+     <RouterView />
       
    </section>
+   
+ 
+ 
+ 
+   <footer>
+      <div class="links">
+        <a class="footerlogo" href="#default" ><img class="logof" src="./assets/Instagram_icon.png" alt="pettergrifinvshomer"></a>
+        <p>Dernière mise à jour le <br>
+        00/00/00</p>
+        <a class="footerlogo" href="#default" ><img class="logof" src="./assets/github-square-icon-2048x2048-dmcyqfbd.png" alt="pettergrifinvshomer"></a>
+      </div>
+   
+   </footer>
+
 </template>
 
 <style  >
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Raleway&display=swap');
 
 html, body {
   margin:0;
@@ -36,6 +58,8 @@ html, body {
   background-image: url(./assets/856f31d9f475501c7552c97dbe727319.jpg);
   background-size: cover ;
   background-size: 200%;
+  font-family: 'Karla', sans-serif;
+   
 }
 
 #app {
@@ -44,43 +68,72 @@ html, body {
   position: absolute;
   margin-left: 0%; 
   width: 100%;
-   
 }
   
 section {
+ 
+ text-align: center;
+ padding-bottom:15%;
+ padding-top: 15%;
+ width:70%;
+ margin: auto;
+}
+ 
+h1 {
+  font-size:150%;     
+  }
+  
+ 
+footer {
+  
+ height: 10%;
+ width: 100%;
+ background-color: darkred;
+ background-image: url(./assets/conception-mise-page-saint-valentin-noel-fond-rouge-doux-luxe-abstrait-studio-salle-modele-web-rapport-activite-couleur-degrade-cercle-lisse_1258-82782.avif);
 
-text-align: center;
-padding-bottom:50%;
-padding-top: 15%;
-width:70%;
-margin: auto;
 
+}
 
+.links {
 
+  width: 50%;
+        margin: auto;
+         
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
 
+}
+
+.footerlogo {
+  width:5% ;
+  height:50% ;
 
 
 
 
 }
+
+
+
+.logof{
  
-h1 {
-  
-  
-  
-  font-size:150%;
-   
-   
-   
-      
-  }
-  
+ height:100%;
+ width:100% ;
  
 
- 
+}
+
+footer p {
+  text-align:center ;
+  font-size: 150%;
 
 
 
+
+}
 
 
 header {
@@ -109,8 +162,13 @@ header a {
   border-radius: 10% ;
   width: 14%;
   height: 45%;
-  background-color: gray;
+  background-color: white;
+  
+   
 }
+ 
+ 
+
 
 header .logodisplay {
   position: relative;
@@ -124,9 +182,20 @@ header .logodisplay {
   border-radius: 50%;
   width: 4%;
   height: 100%;
-  background-color: white
+  background-color: white;
+   
+  
+}
+
+ 
+   
+ 
+
+header .logodisplay {
+   
 
 }
+
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .logo {
   width:100%;
@@ -139,6 +208,8 @@ header .logodisplay {
 header a:hover {
   background-color: #ddd;
   color: black;
+ 
+   
 }
 
 /* Style the active/current link*/
@@ -172,5 +243,14 @@ header a.active {
   }
 }
 
-
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 30%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  margin-left: -20%;
+  background-color: white;
+}
 </style>
