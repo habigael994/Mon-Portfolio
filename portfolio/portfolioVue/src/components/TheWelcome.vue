@@ -35,7 +35,7 @@ import SupportIcon from './icons/IconSupport.vue'
 }
 
 .Pbutton :hover{
-
+  background-color: #ddd;
   text-decoration: underline;
 
 }

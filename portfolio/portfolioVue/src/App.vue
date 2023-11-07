@@ -20,14 +20,14 @@ import { ref } from 'vue'
   
    <section>
     
-     <h1>Je m'appelle Quentin Boyer et j'ai 19 ans.
+     <p>Je m'appelle Quentin Boyer et j'ai 19 ans.
      Je suis actuellement une formation pour devenir développeur web. Passionné par la création et l'innovation, 
      je me consacre à acquérir les compétences nécessaires pour concevoir et développer des sites web, 
      des applications et des expériences en ligne interactives. Mon parcours de formation me permet d'explorer les langages de programmation,
      les technologies front-end et back-end, ainsi que les bonnes pratiques de développement.
      Mon objectif est de contribuer à l'évolution du monde numérique en créant des solutions web efficaces et esthétiques,
      tout en restant à l'affût des dernières tendances et technologies du domaine. 
-     </h1>
+     </p>
      <RouterView />
       
    </section>
@@ -38,7 +38,7 @@ import { ref } from 'vue'
    <footer>
       <div class="links">
         <a class="footerlogo" href="#default" ><img class="logof" src="./assets/Instagram_icon.png" alt="pettergrifinvshomer"></a>
-        <p>Dernière mise à jour le <br>
+        <p class="date">Dernière mise à jour le <br>
         00/00/00</p>
         <a class="footerlogo" href="#default" ><img class="logof" src="./assets/github-square-icon-2048x2048-dmcyqfbd.png" alt="pettergrifinvshomer"></a>
       </div>
@@ -79,7 +79,7 @@ section {
  margin: auto;
 }
  
-h1 {
+p {
   font-size:150%;     
   }
   
@@ -110,7 +110,7 @@ footer {
 .footerlogo {
   width:5% ;
   height:50% ;
-
+   
 
 
 
@@ -187,7 +187,13 @@ header .logodisplay {
   
 }
 
- 
+.date {
+
+  background-color: white;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px black ;
+
+}
    
  
 
@@ -208,7 +214,7 @@ header .logodisplay {
 header a:hover {
   background-color: #ddd;
   color: black;
- 
+  box-shadow: 5px 5px 5px black ;
    
 }
 
