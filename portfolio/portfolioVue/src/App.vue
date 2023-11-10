@@ -1,8 +1,8 @@
-<script setup>
+<script   setup>
+ 
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import { ref } from 'vue'
-
+ 
+ 
  
 
  
@@ -11,28 +11,29 @@ import { ref } from 'vue'
 <template>
   <header>
     
-    <a class="logodisplay" href="#default" ><img class="logo" src=".//assets/726056.png" alt="pettergrifinvshomer"></a>
+    <a class="logodisplay" href="#top" ><img class="logo" src=".//assets/adobe-portfolio8664.jpg" alt="logo"></a>
     <div class="header-right">
-      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/">Accueil</RouterLink>
+      <RouterLink to="/about">A propos</RouterLink>
       <RouterLink to="/Projects">Mes Projets</RouterLink>
+
     </div>
   </header>
   
    <section>
     
-     <p>Je m'appelle Quentin Boyer et j'ai 19 ans.
-     Je suis actuellement une formation pour devenir développeur web. Passionné par la création et l'innovation, 
-     je me consacre à acquérir les compétences nécessaires pour concevoir et développer des sites web, 
-     des applications et des expériences en ligne interactives. Mon parcours de formation me permet d'explorer les langages de programmation,
-     les technologies front-end et back-end, ainsi que les bonnes pratiques de développement.
-     Mon objectif est de contribuer à l'évolution du monde numérique en créant des solutions web efficaces et esthétiques,
-     tout en restant à l'affût des dernières tendances et technologies du domaine. 
-     </p>
+     
      <RouterView />
-      
+    
+    
+   
+
+
+
+
    </section>
    
- 
+  
  
  
    <footer>
@@ -46,6 +47,8 @@ import { ref } from 'vue'
    </footer>
 
 </template>
+
+ 
 
 <style  >
 
@@ -187,6 +190,11 @@ header .logodisplay {
   
 }
 
+ 
+
+ 
+
+ 
 .date {
 
   background-color: white;
@@ -197,17 +205,20 @@ header .logodisplay {
    
  
 
-header .logodisplay {
-   
-
-}
+ 
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .logo {
-  width:100%;
+  width:110%;
   height:100%; 
   object-fit: fill;
-  border-radius: 50%;
+  border-radius: 20%;
+}
+
+.logo:hover{
+  
+  box-shadow: 5px 5px 5px black
+
 }
 
 /* Change the background color on mouse-over */
@@ -234,20 +245,8 @@ header a.active {
 }
 
  
-
-
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
+ 
+ 
 
 .modal {
   position: fixed;

@@ -1,6 +1,6 @@
  <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-   
+  
   import { ref } from 'vue'
 
   const open = ref(false)
@@ -36,7 +36,8 @@
       </p>
       <img class="Proimg2"  src="../assets/cvimg.png" alt="cv">
       <p>liens:<br></p>
-      <a href="https://github.com/habigael994/CV">https://github.com/habigael994/CV</a>
+      <a href="https://github.com/habigael994/CV">https://github.com/habigael994/CV</a> 
+       
       <p>date: 01/07/04</p>
     </div>
   </div>
@@ -90,7 +91,9 @@
         - Javascript <br>
       </p>
       <img class="Proimg4" src="../assets/coml.png" alt="com">
-      <p>liens:</p><a href="https://github.com/habigael994/EspaceCommentaireJS">https://github.com/habigael994/EspaceCommentaireJS</a>
+      <p>liens:</p>
+      <a href="https://github.com/habigael994/EspaceCommentaireJS">https://github.com/habigael994/EspaceCommentaireJS</a> 
+       
       <p>date: 14/10/04</p>
     </div>
   </div>
@@ -98,12 +101,41 @@
 
      </div>
   </div>
+    <article>
+
+      <div class="container">
+        <form action="action_page.php">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+
+  </article>
 </template>
 
 <style>
 
 
- 
+   
+
+  
 
  
   a {
@@ -285,7 +317,47 @@ color: white;
 
 }
 
+ 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid darkred; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: darkred;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: red;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20%;
+}
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+ 
+
+ 
 
 /*@media (min-width: 1024px) { 
  .Projects {
