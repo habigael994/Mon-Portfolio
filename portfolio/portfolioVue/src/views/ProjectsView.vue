@@ -36,7 +36,7 @@
       </p>
       <img class="Proimg2"  src="../assets/cvimg.png" alt="cv">
       <p>liens:<br></p>
-      <a href="https://github.com/habigael994/CV">https://github.com/habigael994/CV</a> 
+      <a href="https://github.com/habigael994/CV" target="_blank">https://github.com/habigael994/CV</a> 
        
       <p>date: 01/07/04</p>
     </div>
@@ -61,7 +61,7 @@
           <h1>Cahier des charges</h1>
           <img class="Proimg3"  src="../assets/cdc.png" alt="cdc">
           <p>liens:</p>
-          <a href="../assets/Cahier des charges (la Socketterie).pdf">Cahier des charges.pdf</a>
+          <a href="https://online.fliphtml5.com/hyzxb/zgsx/" target="_blank">Cahier des charges.pdf</a>
           <p>date: 20/10/04</p>
         </div>
     </div>
@@ -92,7 +92,7 @@
       </p>
       <img class="Proimg4" src="../assets/coml.png" alt="com">
       <p>liens:</p>
-      <a href="https://github.com/habigael994/EspaceCommentaireJS">https://github.com/habigael994/EspaceCommentaireJS</a> 
+      <a href="https://github.com/habigael994/EspaceCommentaireJS" target="_blank">https://github.com/habigael994/EspaceCommentaireJS</a> 
        
       <p>date: 14/10/04</p>
     </div>
@@ -104,30 +104,29 @@
     <article>
 
       <div class="container">
-        <form action="action_page.php">
+        <p>Ecrivez moi un message :D</p>
+        <form accept-charset="UTF-8" action="https://www.formbackend.com/f/bb6c21bbcb57cb9e" method="POST">
 
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
 
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Votre Email" required>
 
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
+           
 
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Ecrivez votre message" style="height:200px"></textarea>
 
-          <input type="submit" value="Submit">
+          <input type="submit" value="Envoyer">
 
         </form>
       </div>
 
   </article>
+
+   
+
 </template>
 
 <style>
@@ -322,7 +321,7 @@ color: white;
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid darkred; /* Gray border */
+  border: 1px solid white; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -332,8 +331,8 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: darkred;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -342,17 +341,30 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: red;
+  background-color: #ddd;
 }
 
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: white;
+  background-color: darkred;
   padding: 20px;
   margin-top: 20%;
 }
 
+label{
+
+  background-color: white;
+  border-radius: 5px;
+   
+}
+
+.container p{
+
+  background-color: white;
+  border-radius: 5px;
+
+}
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
  

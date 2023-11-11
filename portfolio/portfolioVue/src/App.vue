@@ -38,10 +38,10 @@ import { RouterLink, RouterView } from 'vue-router'
  
    <footer>
       <div class="links">
-        <a class="footerlogo" href="#default" ><img class="logof" src="./assets/Instagram_icon.png" alt="pettergrifinvshomer"></a>
+        <a class="footerlogo" href="https://www.instagram.com/camp_thym/?hl=fr" target="_blank"><img class="logof" src="./assets/Instagram_icon.png" alt="pettergrifinvshomer"></a>
         <p class="date">Dernière mise à jour le <br>
         00/00/00</p>
-        <a class="footerlogo" href="#default" ><img class="logof" src="./assets/github-square-icon-2048x2048-dmcyqfbd.png" alt="pettergrifinvshomer"></a>
+        <a class="footerlogo" href="https://github.com/habigael994" target="_blank"><img class="logof" src="./assets/github-square-icon-2048x2048-dmcyqfbd.png" alt="pettergrifinvshomer"></a>
       </div>
    
    </footer>
