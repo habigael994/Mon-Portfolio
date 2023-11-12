@@ -8,15 +8,13 @@
      les technologies front-end et back-end, ainsi que les bonnes pratiques de développement.
      Mon objectif est de contribuer à l'évolution du monde numérique en créant des solutions web efficaces et esthétiques,
      tout en restant à l'affût des dernières tendances et technologies du domaine. 
-     </p>
+  </p>
   <div class="Pbutton">
     <RouterLink to="/Projects">Découvrir mes projets</RouterLink>
   </div>
 </template>
 
-
 <style scoped>
-
 .Pbutton{
   margin: auto; 
   background-color: darkred;
@@ -31,18 +29,14 @@
   color: darkred;
   border-radius: 5%;
   text-decoration: none;
-  
-
 }
 
 .Pbutton :hover{
   background-color: #ddd;
   text-decoration: underline;
-
 }
 
 p {
   font-size:150%;     
   }
-  
 </style>

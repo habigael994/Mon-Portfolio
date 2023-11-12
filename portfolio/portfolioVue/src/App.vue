@@ -1,57 +1,29 @@
-<script   setup>
- 
-import { RouterLink, RouterView } from 'vue-router'
- 
- 
- 
-
- 
+<script   setup> 
+import { RouterLink, RouterView } from 'vue-router' 
 </script>
 
 <template>
   <header>
-    
     <a class="logodisplay" href="#top" ><img class="logo" src=".//assets/adobe-portfolio8664.jpg" alt="logo"></a>
     <div class="header-right">
       <RouterLink to="/">Accueil</RouterLink>
       <RouterLink to="/about">A propos</RouterLink>
       <RouterLink to="/Projects">Mes Projets</RouterLink>
-
     </div>
   </header>
-  
-   <section>
-    
-     
-     <RouterView />
-    
-    
-   
-
-
-
-
-   </section>
-   
-  
- 
- 
+  <section>
+    <RouterView />
+  </section>
    <footer>
       <div class="links">
         <a class="footerlogo" href="https://www.instagram.com/camp_thym/?hl=fr" target="_blank"><img class="logof" src="./assets/Instagram_icon.png" alt="pettergrifinvshomer"></a>
-        <p class="date">Dernière mise à jour le <br>
-        00/00/00</p>
+        <p class="date">Dernière mise à jour le <br>00/00/00</p>
         <a class="footerlogo" href="https://github.com/habigael994" target="_blank"><img class="logof" src="./assets/github-square-icon-2048x2048-dmcyqfbd.png" alt="pettergrifinvshomer"></a>
       </div>
-   
    </footer>
-
 </template>
 
- 
-
 <style  >
-
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Raleway&display=swap');
 
 html, body {
@@ -62,11 +34,9 @@ html, body {
   background-size: cover ;
   background-size: 200%;
   font-family: 'Karla', sans-serif;
-   
 }
 
 #app {
-   
   height: 100%;
   position: absolute;
   margin-left: 0%; 
@@ -74,7 +44,6 @@ html, body {
 }
   
 section {
- 
  text-align: center;
  padding-bottom:15%;
  padding-top: 15%;
@@ -84,60 +53,40 @@ section {
  
 p {
   font-size:150%;     
-  }
+}
   
  
 footer {
-  
  height: 10%;
  width: 100%;
  background-color: darkred;
  background-image: url(./assets/conception-mise-page-saint-valentin-noel-fond-rouge-doux-luxe-abstrait-studio-salle-modele-web-rapport-activite-couleur-degrade-cercle-lisse_1258-82782.avif);
-
-
 }
 
 .links {
-
   width: 50%;
-        margin: auto;
-         
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-around;
-
+  margin: auto;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footerlogo {
   width:5% ;
   height:50% ;
-   
-
-
-
 }
 
-
-
 .logof{
- 
- height:100%;
- width:100% ;
- 
-
+  height:100%;
+  width:100% ;
 }
 
 footer p {
   text-align:center ;
   font-size: 150%;
-
-
-
-
 }
-
 
 header {
   display: flex;
@@ -151,8 +100,7 @@ header {
   background-image:url(./assets/conception-mise-page-saint-valentin-noel-fond-rouge-doux-luxe-abstrait-studio-salle-modele-web-rapport-activite-couleur-degrade-cercle-lisse_1258-82782.avif);
   background-size: cover;
 }
-
-/* Style the header links */
+ 
 header a {
   position: relative;
   float: left;
@@ -166,13 +114,8 @@ header a {
   width: 14%;
   height: 45%;
   background-color: white;
-  
-   
 }
  
- 
-
-
 header .logodisplay {
   position: relative;
   float: left;
@@ -186,28 +129,14 @@ header .logodisplay {
   width: 4%;
   height: 100%;
   background-color: white;
-   
-  
 }
 
- 
-
- 
-
- 
 .date {
-
   background-color: white;
   border-radius: 10%;
   box-shadow: 5px 5px 5px black ;
-
 }
    
- 
-
- 
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .logo {
   width:110%;
   height:100%; 
@@ -216,26 +145,20 @@ header .logodisplay {
 }
 
 .logo:hover{
-  
   box-shadow: 5px 5px 5px black
-
 }
 
-/* Change the background color on mouse-over */
 header a:hover {
   background-color: #ddd;
   color: black;
   box-shadow: 5px 5px 5px black ;
-   
 }
 
-/* Style the active/current link*/
 header a.active {
   background-color: whitesmoke;
   color: black;
 }
 
-/* Float the link section to the right */
 .header-right {
   width: 40%;
   height: 100%;
@@ -243,10 +166,6 @@ header a.active {
   justify-content: space-around;
   float: right;
 }
-
- 
- 
- 
 
 .modal {
   position: fixed;

@@ -1,151 +1,99 @@
  <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  
   import { ref } from 'vue'
 
   const open = ref(false)
   const open2 = ref(false)
   const open3 = ref(false)
-  
-
-
 </script>
 
 
 <template>
   <div class="Projects">
-     <div class="projectlink">
+    <div class="projectlink">
       <img class="Proimg"  src="../assets/cvimg.png" alt="cv">
-      <div class="outer">
-  <div>
-    <MyModal />
-  </div>
-</div>
- 
-<button class="Pbutton" @click="open = true , open2 = false, open3= false">Voir le projet</button>
-
-<Teleport to="body">
-  <div v-if="open" class="modal">
-   
-    <button class = "Ebutton" @click="open = false">X</button>
-    <div class="modalText">
-      <h1>Mon CV</h1>
-      <p>technologies utilisées: <br>
-        - HTLM5 <br>
-        - CSS(flexbox) <br>
-      </p>
-      <img class="Proimg2"  src="../assets/cvimg.png" alt="cv">
-      <p>liens:<br></p>
-      <a href="https://github.com/habigael994/CV" target="_blank">https://github.com/habigael994/CV</a> 
-       
-      <p>date: 01/07/04</p>
-    </div>
-  </div>
-</Teleport>
-     
-     </div>
-     <div class="projectlink">
-      <img class="Proimg"  src="../assets/cdc.png" alt="cv">
-      <div class="outer">
-  <div>
-    <MyModal />
-  </div>
-</div>
- 
-<button class="Pbutton" @click="open2 = true, open = false, open3 = false">Voir le projet</button>
-
-<Teleport to="body">
-  <div v-if="open2" class="modal2"  >
-        <button class = "Ebutton" @click="open2 = false ">X</button>
-        <div class="modalText">
-          <h1>Cahier des charges</h1>
-          <img class="Proimg3"  src="../assets/cdc.png" alt="cdc">
-          <p>liens:</p>
-          <a href="https://online.fliphtml5.com/hyzxb/zgsx/" target="_blank">Cahier des charges.pdf</a>
-          <p>date: 20/10/04</p>
+      <div class="outer"></div>
+      <button class="Pbutton" @click="open = true , open2 = false, open3= false">Voir le projet</button>
+      <Teleport to="body">
+        <div v-if="open" class="modal">
+          <button class = "Ebutton" @click="open = false">X</button>
+          <div class="modalText">
+            <h1>Mon CV</h1>
+            <p>technologies utilisées: <br>
+              - HTLM5 <br>
+              - CSS(flexbox) <br>
+            </p>
+            <img class="Proimg2"  src="../assets/cvimg.png" alt="cv">
+            <p>liens:<br></p>
+            <a href="https://github.com/habigael994/CV" target="_blank">https://github.com/habigael994/CV</a> 
+            <p>date: 01/07/04</p>
+          </div>
         </div>
-    </div>
-   
-</Teleport>
-
+      </Teleport>
      </div>
-     <div class="projectlink">
+    <div class="projectlink">
+      <img class="Proimg"  src="../assets/cdc.png" alt="cv">
+      <div class="outer"></div>
+      <button class="Pbutton" @click="open2 = true, open = false, open3 = false">Voir le projet</button>
+      <Teleport to="body">
+        <div v-if="open2" class="modal2"  >
+          <button class = "Ebutton" @click="open2 = false ">X</button>
+          <div class="modalText">
+            <h1>Cahier des charges</h1>
+            <img class="Proimg3"  src="../assets/cdc.png" alt="cdc">
+            <p>liens:</p>
+            <a href="https://online.fliphtml5.com/hyzxb/zgsx/" target="_blank">Cahier des charges.pdf</a>
+            <p>date: 20/10/04</p>               
+          </div>
+        </div>   
+      </Teleport>
+    </div>
+    <div class="projectlink">
       <img class="Proimg"  src="../assets/coml.png" alt="cv">
-      <div class="outer">
-  <div>
-    <MyModal />
-  </div>
-</div>
- 
-<button  class="Pbutton" @click="open3 = true, open = false,open2 = false">Voir le projet</button>
-
-<Teleport to="body">
-  <div v-if="open3" class="modal3">
-    
-    <button class = "Ebutton" @click="open3 = false">X</button>
-    <div class="modalText">
-      <h1>Espace commentaire</h1>
-      <p>technologies utilisées: <br>
-        - HTLM5 <br>
-        - CSS(flexbox)
-        - Javascript <br>
-      </p>
-      <img class="Proimg4" src="../assets/coml.png" alt="com">
-      <p>liens:</p>
-      <a href="https://github.com/habigael994/EspaceCommentaireJS" target="_blank">https://github.com/habigael994/EspaceCommentaireJS</a> 
-       
-      <p>date: 14/10/04</p>
+      <div class="outer"></div>
+      <button  class="Pbutton" @click="open3 = true, open = false,open2 = false">Voir le projet</button>
+      <Teleport to="body">
+        <div v-if="open3" class="modal3">
+          <button class = "Ebutton" @click="open3 = false">X</button>
+          <div class="modalText">
+            <h1>Espace commentaire</h1>
+            <p>technologies utilisées: <br>
+              - HTLM5 <br>
+              - CSS(flexbox)
+              - Javascript <br></p>
+            <img class="Proimg4" src="../assets/coml.png" alt="com">
+            <p>liens:</p>
+            <a href="https://github.com/habigael994/EspaceCommentaireJS" target="_blank">https://github.com/habigael994/EspaceCommentaireJS</a> 
+            <p>date: 14/10/04</p>
+          </div>
+        </div>
+      </Teleport>
     </div>
-  </div>
-</Teleport>
-
-     </div>
   </div>
     <article>
-
       <div class="container">
         <p>Ecrivez moi un message :D</p>
         <form accept-charset="UTF-8" action="https://www.formbackend.com/f/bb6c21bbcb57cb9e" method="POST">
-
           <label for="name">Nom</label>
           <input type="text" id="name" name="name" placeholder="Votre nom" required>
-
           <label for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Votre Email" required>
-
-           
-
           <label for="subject">Message</label>
           <textarea id="subject" name="subject" placeholder="Ecrivez votre message" style="height:200px"></textarea>
-
           <input type="submit" value="Envoyer">
-
         </form>
       </div>
-
   </article>
-
-   
-
 </template>
 
 <style>
 
-
-   
-
-  
-
- 
   a {
     font-size: 90%;
     color: black;
-
-
   }
 
   .Projects { 
-     
     background-color: darkred;
     width: 100%;
     min-height: 60vh;
@@ -153,11 +101,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around   ;
-     
-
-
-
-
   }
 
   .projectlink {
@@ -166,26 +109,15 @@
     border-style: solid;
     border-color: whitesmoke;
     border-radius: 3%;
-     
-
   }
 
   .Proimg {
     width:100% ;
     height:100% ;
-
-      
-     
-
-
   }
 
   .projectlink h1 {
-
     background-color: darkred;
-
-
-
   }
 
   .modal {
@@ -216,9 +148,7 @@
   border-style: solid;
   border-color: black;
   box-shadow: 5px 5px 5px black;
-  
 }
-
 
 .modal3 {
   position: fixed;
@@ -236,43 +166,29 @@
 }
 
 .Pbutton {
-
   background-color: darkred;
   color: white;
 }
 
 .Pbutton :hover {
-
   cursor: pointer;
-
 }
 
 .projectlink:hover {
- 
   box-shadow: 5px 5px 5px black;
-
-
-
 }
 
 .Ebutton {
 border-color: darkred;
-   
 background-color: darkred;
 color: white;
- 
-
- 
 }
  
 .Ebutton:hover {
-
   cursor: pointer;
-
 }
 
 .modalText {
-
  margin-left: 5%;
 }
 
@@ -286,7 +202,6 @@ color: white;
   border-style: solid;
   border-color: black;
   box-shadow: 2px 2px 2px black ;
-
 }
 
 .Proimg3 {
@@ -299,9 +214,7 @@ color: white;
   border-style: solid;
   border-color: black;
   box-shadow: 2px 2px 2px black  ; 
-
 }
-
 
 .Proimg4 {
   height:80% ;
@@ -313,23 +226,19 @@ color: white;
   border-style: solid;
   border-color: black;
   box-shadow: 2px 2px 2px black  ;
-
 }
 
- 
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid white; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;  
+  padding: 12px;  
+  border: 1px solid white;  
+  border-radius: 4px; 
+  box-sizing: border-box;  
+  margin-top: 6px; 
+  margin-bottom: 16px;  
+  resize: vertical ;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: white;
   color: black;
@@ -339,12 +248,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #ddd;
 }
 
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: darkred;
@@ -353,29 +260,12 @@ input[type=submit]:hover {
 }
 
 label{
-
   background-color: white;
   border-radius: 5px;
-   
 }
 
 .container p{
-
   background-color: white;
   border-radius: 5px;
-
 }
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
- 
-
- 
-
-/*@media (min-width: 1024px) { 
- .Projects {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}*/
 </style>
