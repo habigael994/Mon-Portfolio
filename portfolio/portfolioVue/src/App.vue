@@ -4,11 +4,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <a class="logodisplay" href="#top" ><img class="logo" src=".//assets/adobe-portfolio8664.jpg" alt="logo"></a>
+    <a class="logodisplay" href="#top" ><img class="logo" src=".//assets/logo.png" alt="logo"></a>
     <div class="header-right">
-      <RouterLink to="/">Accueil</RouterLink>
-      <RouterLink to="/about">A propos</RouterLink>
-      <RouterLink to="/Projects">Mes Projets</RouterLink>
+      <RouterLink class="headerLink" to="/">Accueil</RouterLink>
+      <RouterLink class="headerLink" to="/about">A propos</RouterLink>
+      <RouterLink class="headerLink" to="/Projects">Mes Projets</RouterLink>
     </div>
   </header>
   <section>
@@ -101,7 +101,7 @@ header {
   background-size: cover;
 }
  
-header a {
+header .headerLink {
   position: relative;
   float: left;
   color: black;
@@ -128,7 +128,7 @@ header .logodisplay {
   border-radius: 50%;
   width: 4%;
   height: 100%;
-  background-color: white;
+  background-color: none;
 }
 
 .date {
@@ -142,13 +142,14 @@ header .logodisplay {
   height:100%; 
   object-fit: fill;
   border-radius: 20%;
+  background-color: none;
 }
 
 .logo:hover{
   box-shadow: 5px 5px 5px black
 }
 
-header a:hover {
+header .headerLink:hover {
   background-color: #ddd;
   color: black;
   box-shadow: 5px 5px 5px black ;
