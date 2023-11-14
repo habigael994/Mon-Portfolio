@@ -138,7 +138,7 @@ header .logodisplay {
 }
    
 .logo {
-  width:110%;
+  width:120%;
   height:100%; 
   object-fit: fill;
   border-radius: 20%;
